@@ -6,6 +6,8 @@ add_library(
 	./fosl/l3gd20.h
 	./fosl/l3gd20/base.cpp
 	./fosl/l3gd20/base.h
+	./fosl/l3gd20/spi/base.cpp
+	./fosl/l3gd20/spi/base.h
 )
 
 target_include_directories(
