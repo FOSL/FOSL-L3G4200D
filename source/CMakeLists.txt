@@ -1,13 +1,11 @@
-project(fosl-l3gd20)
+project(FOSL-L3G4200D)
 
 add_library(
 	${PROJECT_NAME}
 
-	./fosl/l3gd20.h
-	./fosl/l3gd20/base.cpp
-	./fosl/l3gd20/base.h
-	./fosl/l3gd20/spi/base.cpp
-	./fosl/l3gd20/spi/base.h
+	./FOSL/L3G4200D.hpp
+	./FOSL/L3G4200D/Base.cpp
+	./FOSL/L3G4200D/Base.hpp
 )
 
 target_include_directories(
@@ -19,5 +17,5 @@ target_include_directories(
 target_link_libraries(
 	${PROJECT_NAME}
 
-	fosl-util
+	FOSL-Utilities
 )

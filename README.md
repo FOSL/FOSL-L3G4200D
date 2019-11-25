@@ -1,4 +1,4 @@
-# fosl-l3gd20
+# fosl-l3g4200
 
 ## Description
 

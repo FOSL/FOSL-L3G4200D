@@ -1,9 +1,9 @@
-#ifndef _FOSL_L3GD20_REGISTER_H_
-#define _FOSL_L3GD20_REGISTER_H_
+#ifndef _FOSL_L3G4200D_REGISTER_HPP_
+#define _FOSL_L3G4200D_REGISTER_HPP_
 
-namespace fosl
+namespace FOSL
 {
-	namespace L3gd20
+	namespace L3G4200D
 	{
 		enum class REGISTER : uint8_t
 		{
