@@ -49,9 +49,9 @@ namespace FOSL
 			float scaler;
 			switch(specification.scale)
 			{
-				case SCALE::DPS250:  scaler = 8.75 / 1000; break;
-				case SCALE::DPS500:  scaler = 17.5 / 1000; break;
-				case SCALE::DPS2000: scaler = 70   / 1000; break;
+				case SCALE::DPS250:  scaler =  8.75 / 1000.0; break;
+				case SCALE::DPS500:  scaler = 17.50 / 1000.0; break;
+				case SCALE::DPS2000: scaler = 70.00 / 1000.0; break;
 			}
 
 			angular_rate.x *= scaler;
