@@ -5,7 +5,7 @@ namespace FOSL
 {
 	namespace L3G4200D
 	{
-		enum class REGISTER : uint8_t
+		enum class REGISTER : u8
 		{
 			WHO_AM_I      = 0x0F,
 			CTRL_REG1     = 0x20,

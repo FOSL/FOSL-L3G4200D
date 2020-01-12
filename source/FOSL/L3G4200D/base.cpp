@@ -1,11 +1,11 @@
-#include "FOSL/L3G4200D/Base.hpp"
+#include "FOSL/L3G4200D/base.hpp"
 
 namespace FOSL
 {
 	namespace L3G4200D
 	{
 		// SETTERS
-		void Base::set_scale(SCALE scale)
+		void base::set_scale(enum SCALE scale)
 		{
 			specification.scale = scale;
 
@@ -18,7 +18,7 @@ namespace FOSL
 		}
 
 		// METHODS
-		void Base::initialize(Specification specification)
+		void base::initialize(struct specification specification)
 		{
 			// REFER TO DATASHEET!
 
@@ -32,12 +32,12 @@ namespace FOSL
 			write(REGISTER::CTRL_REG5, 0b00010000); // ENABLE HIGH-PASS FILTER
 		}
 
-		bool Base::is_connected(void)
+		bool base::is_connected(void)
 		{
 			return read(REGISTER::WHO_AM_I) == WHO_AM_I;
 		}
 
-		Math::Vector3<int16_t>& Base::read_angular_rate(void)
+		math::vector3<s16> &base::read_angular_rate(void)
 		{
 			angular_rate.x  = read(REGISTER::OUT_X_L) & 0xFF;
 			angular_rate.x |= read(REGISTER::OUT_X_H) << 8  ;

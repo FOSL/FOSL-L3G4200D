@@ -4,8 +4,8 @@ add_library(
 	${PROJECT_NAME}
 
 	./FOSL/L3G4200D.hpp
-	./FOSL/L3G4200D/Base.cpp
-	./FOSL/L3G4200D/Base.hpp
+	./FOSL/L3G4200D/base.cpp
+	./FOSL/L3G4200D/base.hpp
 )
 
 target_include_directories(
@@ -17,5 +17,5 @@ target_include_directories(
 target_link_libraries(
 	${PROJECT_NAME}
 
-	FOSL-Utilities
+	FOSL-math
 )
